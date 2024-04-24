@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
@@ -10,6 +11,7 @@ cout << "Introduzca la altura:";
 cin >> altura;
 resultado = (base + altura)/2;
 cout << "El area del triangulo es :" << resultado << endl;
+
 return 0;
 
 }

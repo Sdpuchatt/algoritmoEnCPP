@@ -22,7 +22,7 @@ cout << "*********************************" << endl;
 double radio = 14.5 , altura = 28.79;
 resultado = ((M_PI * pow(radio,2)) / altura) / 3;
 
-cout <<  "El volumen de un cono de base:14.5 y altura:28.79 es " << resultado;
+cout <<  "El volumen de un cono de radio:14.5 y altura:28.79 es " << resultado;
 
 
 return 0;

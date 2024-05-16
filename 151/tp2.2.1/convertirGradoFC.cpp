@@ -3,6 +3,7 @@
 // Grados Fahrenheit = (grados centígrados × 9/5) +32.
 // grados celsius = restar 32 y luego multiplicar por 5/ 9
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 void convertirCelsiusFahrenheit(double celsius);
@@ -10,23 +11,30 @@ void convertirFahrenheitCelcius(double Fahrenheit);
 
 
 int main(){
+    double grados = 0;
     int opcion = 0;
     bool repetir = true;
-    double grados = 0;
+
+
     do{
-        cout <<"Elija una opcion" << endl;
-        cout <<"Opcion 1 para convertir de grados celcius a Fahrenheit"<<endl;
-        cout <<"Opcion 2 para convertir de grados Fahrenheit a celsius"<<endl;
+       
+        cout << "\n\n\t\t\tMENU PRINCIPAL" << endl;
+        cout << "\t\t\t--------------" << endl;
+        cout << "\n\t 1. Convertir de grados celcius a Fahrenheit" << endl;
+        cout << "\t 2. Convertir de grados Fahrenheit a celsius" << endl;
+        cout << "\t 0. SALIR" << endl;
+
+        cout << "\n\t Ingrese una opcion: ";
         cin >> opcion;
 
         switch(opcion){
             case 1:
-                cout <<"Ingrese los grados a convertir"<<endl;
+                cout <<"\t Ingrese los grados a convertir Celsius: "<<endl;
                 cin >> grados;
                 convertirCelsiusFahrenheit(grados);
                 break;
             case 2:
-                cout <<"Ingrese los grados a convertir"<<endl;
+                cout <<"\t Ingrese los grados a convertir Fahrenheit"<<endl;
                 cin >> grados;
                 convertirFahrenheitCelcius(grados);
             case 0: 
@@ -41,9 +49,9 @@ int main(){
 
 void convertirCelsiusFahrenheit(double celsius){
 // Grados Fahrenheit = (grados centígrados × 9/5) +32.
-cout<<"Se convirtio "<<celsius<<"celsius a "<<((celsius*9.0/5.0)+32)<< "Fahrenheit" << endl;
+cout<<"\t Se convirtio "<<celsius<<" celsius a "<<((celsius*9.0/5.0)+32)<< " Fahrenheit" << endl;
 };
 void convertirFahrenheitCelcius(double Fahrenheit){
 // grados celsius = restar 32 y luego multiplicar por 5/ 9
-cout<<"Se convirtio "<<Fahrenheit<<"Fahrenheit a "<<((Fahrenheit-32)*5.0/9.0)<< "Celsius" << endl;
+cout<<"\t Se convirtio "<<Fahrenheit<<" Fahrenheit a "<<((Fahrenheit-32)*5.0/9.0)<< " Celsius" << endl;
 };

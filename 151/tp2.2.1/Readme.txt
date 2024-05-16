@@ -1,39 +1,5 @@
 ISFTN151 – Analista en Sistemas – Algoritmos y Estructuras de Datos.
 
-Página: 1
-
-+Instituto Superior de Formación Técnica Nº 151
-Carrera: Analista de Sistemas
-1 Año. Algoritmos y Estructuras de Datos I
-Trabajo Práctico Nº 2.2.1 Unidad 2 - Funciones
-Modalidad: Semi-Presencial Estratégica Didáctica: Trabajo Grupal.
-Metodología de Desarrollo: acordar Metodología de Corrección: acordar docente
-Carácter de Trabajo: Obligatorio – con Nota Fecha Entrega: A confirmar por el Docente.
-
-Unidad 2 – Especial Funciones
-
-Marco Teórico:
-
-1. Describir le concepto de Método, Función y Procedimiento.
-2. ¿Que es una función en C++?
-3. Dar 5 ejemplos de funciones (nombre y tarea que realiza).
-4. Considera relevante el Nombre de la función?, cuantas tareas considera que debería hacer
-una función? Por qué’.
-5. ¿Qué entiende por declaración de función (o prototipo de función) y que partes contiene?
-6. ¿Qué es el tipo de valor devuelto?, que significa que una función devuelva void?
-7. ¿Qué restricciones hay para colocarles nombres a las funciones?
-8. ¿Qué entiende por variables locales?
-9. ¿Qué ocurre si una función devuelve variables locales?
-10. Definir el Concepto de Parámetros y Argumentos.
-11. Relacionar Parámetros y Argumentos.
-12. ¿Qué significa que un parámetro se pase x valor?
-13. ¿Qué significa que un parámetro se pase x referencia?
-14. ¿Qué pasa Cuando una función modifica un argumento que se pasa por referencia?
-15. ¿Qué ocurre cuando se pone la palabra Void en la lista de argumentos?
-16. ¿Qué tipos de datos o valores puede devolver una función?
-
-ISFTN151 – Analista en Sistemas – Algoritmos y Estructuras de Datos.
-
 Página: 2
 
 Marco Practico:

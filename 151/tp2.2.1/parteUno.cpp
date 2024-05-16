@@ -1,22 +1,49 @@
-// Desarrollar en C++ usando funciones, la idea es ir Modularizando y Desacoplando el código
-// separando la Definición, el llamado de la implementación.
 // 1. Crear un programa por consola que convierta Grados Centígrados en Fahrenheit y
 // viceversa, el programa debe preguntar qué operación desea hacer el usuario.
-// 2. Crear un programa que sume, reste, multiplica y divida.
-// 3. Realizar un programa que pida un rango, luego que ingrese un número y determine si está
-// dentro del rango solicitados.
-// 4. Realizar un programa que permita saber si un número es primo o no.
+// Grados Fahrenheit = (grados centígrados × 9/5) +32.
+// grados celsius = restar 32 y luego multiplicar por 5/ 9
+#include <iostream>
+using namespace std;
 
-// Marco Práctico:
-// Desarrollar en C++ los siguientes programas:
+void convertirCelsiusFahrenheit(double celsius);
+void convertirFahrenheitCelcius(double Fahrenheit);
 
-// 1. Resolver y Realizar en c++
-// a. Realice un programa que lea de la entrada estándar los siguientes datos de
-// una persona: Edad: dato de tipo entero. Sexo: dato de tipo carácter. Altura en
-// metros: dato de tipo real. Tras leer los datos, el programa debe mostrarlos en
-// la salida estándar.
-// b. La Nota final de un estudiante es el promedio de tres notas: la nota de
-// laboratorio que cuenta un 30% del total, la nota teórica que cuenta un 60% y
-// la nota de Práctica que cuenta el 10% restante. Escriba un programa que lea
-// de la entrada estándar las tres notas de un alumno y escriba en la salida
-// estándar su nota final.
+
+int main(){
+    int opcion = 0;
+    bool repetir = true;
+    double grados = 0;
+    do{
+        cout <<"Elija una opcion" << endl;
+        cout <<"Opcion 1 para convertir de grados celcius a Fahrenheit"<<endl;
+        cout <<"Opcion 2 para convertir de grados Fahrenheit a celsius"<<endl;
+        cin >> opcion;
+
+        switch(opcion){
+            case 1:
+                cout <<"Ingrese los grados a convertir"<<endl;
+                cin >> grados;
+                convertirCelsiusFahrenheit(grados);
+                break;
+            case 2:
+                cout <<"Ingrese los grados a convertir"<<endl;
+                cin >> grados;
+                convertirFahrenheitCelcius(grados);
+            case 0: 
+                repetir = false;
+                break;
+        }
+    }while(repetir);
+   
+    
+    return 0;
+}
+
+void convertirCelsiusFahrenheit(double celsius){
+// Grados Fahrenheit = (grados centígrados × 9/5) +32.
+cout<<"Se convirtio "<<celsius<<"celsius a "<<((celsius*9.0/5.0)+32)<< "Fahrenheit" << endl;
+};
+void convertirFahrenheitCelcius(double Fahrenheit){
+// grados celsius = restar 32 y luego multiplicar por 5/ 9
+cout<<"Se convirtio "<<Fahrenheit<<"Fahrenheit a "<<((Fahrenheit-32)*5.0/9.0)<< "Celsius" << endl;
+};

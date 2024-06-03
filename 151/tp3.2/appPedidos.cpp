@@ -17,7 +17,7 @@ int main()
 return 0;
 
 }
-char mostrarProducto () {
+producto mostrarProducto () {
     cout << "Elija una opcion. \n";
     cout << "1) Simple\n";
     cout << "2) medio\n";

@@ -9,20 +9,35 @@
 // vistos, while Swtch If ….
 #include <iostream>
 using namespace std;
+
 typedef enum {Simple, Medio, Calidad, Premium} producto;
 typedef enum {Normal, Express, Fast_Delivery} pedido;
+
+producto mostrarProducto ();
+pedido mostrarPedido ();
+string productoToString(producto producto);
+string pedidoToString(pedido pedido);
 int main()
 {
 
-return 0;
+producto producto = mostrarProducto();
+cout << "\n";
+pedido pedido = mostrarPedido();
+cout << "\n";
+cout << "\n****************************\n";
+cout << "\tUsted pidio: " << endl;
+cout << "\t" << productoToString(producto) << endl;
+cout << "\t" << pedidoToString(pedido) << endl;
+cout << "****************************\n";
 
+return 0;
 }
 producto mostrarProducto () {
-    cout << "Elija una opcion. \n";
-    cout << "1) Simple\n";
-    cout << "2) medio\n";
-    cout << "3) calidad\n";
-    cout << "4) Premiun ";
+    cout << "\n\tElija una opcion. \n";
+    cout << "\t1. Simple\n";
+    cout << "\t2. medio\n";
+    cout << "\t3. calidad\n";
+    cout << "\t4. Premiun ";
     int opcion;
     cin >> opcion;
 
@@ -38,18 +53,45 @@ producto mostrarProducto () {
     }
     
 }
-int mostrarPedido (){
-    cout << "Elija una opcion. \n";
-    cout << "1) normal\n";
-    cout << "2) express\n";
-    cout << "3) Fast Delivery";
-    cout << "d) Premiun ";
+pedido mostrarPedido (){
+    cout << "\tElija una opcion. \n";
+    cout << "\t1. normal\n";
+    cout << "\t2. express\n";
+    cout << "\t3. Fast Delivery ";
     int opcion;
     cin >> opcion;
-    return opcion;
-}
-string productoToString(int producto){
-    switch(producto){
-        case 
+    switch(opcion){
+        case 1:
+            return Normal;
+        case 2:
+            return Express;
+        case 3:
+            return Fast_Delivery;
     }
+}
+string productoToString(producto producto){
+    string cadena;
+    switch(producto){
+        case Simple: 
+            cadena = "Simple";
+        case Medio:
+            cadena = "Medio";
+        case Calidad:
+            cadena = "Calidad";
+        case Premium:
+            cadena = "Premium";
+    }
+    return cadena;
+}
+string pedidoToString(pedido pedido){
+    string cadena;
+    switch(pedido){
+        case Normal:
+            cadena = "Normal";
+        case Express:
+            cadena = "Express";
+        case Fast_Delivery:
+            cadena = "Fast_Delivery";
+    }
+    return cadena;
 }

@@ -46,7 +46,6 @@ int longitudPalabraMasLarga(string frase) {
         }
     }
 
-    // Verificar si la última palabra es la más larga
     longitudMaxima = max(longitudMaxima, longitudActual);
 
     return longitudMaxima;

@@ -1,0 +1,7 @@
+1 Juan Perez Gerente
+2 Ana Gomez Subgerente
+3 Luis Martinez Analista
+4 Maria Lopez Secretaria
+5 Pedro Rodriguez Contador
+6 Laura Garcia Administrativa
+7 Carlos Sanchez Supervisor

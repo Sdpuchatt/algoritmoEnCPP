@@ -12,7 +12,7 @@ void Order::attach(Article* article)
 }
 void Order::show()
 {
-    for(article article: articleList)
+    for(Article* article: articleList)
     {
         cout << "Cliente: " << this->customer->getName() << endl;
         cout << "Codigo de Articulo: " << article->getCode() << endl;

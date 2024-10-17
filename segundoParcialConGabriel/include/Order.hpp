@@ -16,7 +16,7 @@ class Order
         string code;
         Customer* customer;
         // ArticlesRepository* articles;
-        lis<Article*> articleList;
+        list<Article*> articleList;
     public:
         Order(string code, Customer* customer);
         void attach(Article* article);

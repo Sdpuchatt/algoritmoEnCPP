@@ -15,7 +15,7 @@ class Customer
     public:
         Customer(string code, string name, string address);
         string getCode();
-        string geetName();
+        string getName();
         string getAddress();
 };
 

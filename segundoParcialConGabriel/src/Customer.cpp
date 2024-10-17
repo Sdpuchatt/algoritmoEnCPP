@@ -4,7 +4,7 @@ Customer::Customer(string code, string name, string address)
 {
     this->code = code;
     this->name = name;
-    this-address = address;
+    this->address = address;
 }
 
 string Customer::getCode()

@@ -1,0 +1,10 @@
+1. ¿Qué es una Estructura y que representa a nivel de Abstracción?
+Una estructura es un tipo de dato, puede agrupar varias variables.
+Cuando hablamos de nivel de abstracción nos referimos a que una estructura puede ser cualquier objeto.
+Por ejemplo estructura persona y puede contener nombre apellido edad.
+
+3. ¿Qué Diferencia hay entre un Arreglo y una Matriz?
+Un array y una matriz es lo mismo. Podemos pensar en una matriz como un array bidimensional.
+Osea array de una dimensión int array [] 
+y un array bidimnesional int array [][].
+un array es una variable que puede contener una cantidad de mismo tipo de dato.

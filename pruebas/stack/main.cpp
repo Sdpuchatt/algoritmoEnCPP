@@ -8,5 +8,8 @@ int main() {
 
     p1.mostrar();
     p2.mostrar();
+    p1.getNombre();
+    p1.setNombre("PUCHATT");
+    p1.mostrar();
     return 0;
 }

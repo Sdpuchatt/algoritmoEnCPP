@@ -15,5 +15,8 @@ class Persona{
         Persona(int id, string nombre, string dni, int edad);
         ~Persona();
         void mostrar();
+        string getNombre();
+        void setNombre(string nombre);
+
 };
 #endif

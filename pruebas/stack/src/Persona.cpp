@@ -19,3 +19,10 @@ void Persona::mostrar(){
     cout << "dni: " << dni << endl;
     cout << "edad: " << edad << endl;
 }
+string Persona::getNombre(){
+    return nombre;
+}
+void Persona::setNombre(string nombre){
+    this->nombre = nombre;
+}
+

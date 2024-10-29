@@ -8,10 +8,10 @@ Empleado::Empleado(string _codigo,string _nombre, string _direccion, string _pue
     puesto = _puesto;
 }
  
-std::string Empleado::getCodigo() { return codigo; }
-std::string Empleado::getNombre() { return nombre; }
-std::string Empleado::getDireccion() { return direccion; }
-std::string Empleado::getPuesto() { return puesto; }
+string Empleado::getCodigo() { return codigo; }
+string Empleado::getNombre() { return nombre; }
+string Empleado::getDireccion() { return direccion; }
+string Empleado::getPuesto() { return puesto; }
 
 void Empleado::mostrar() {
     

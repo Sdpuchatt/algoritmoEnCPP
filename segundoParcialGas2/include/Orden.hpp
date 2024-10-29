@@ -6,17 +6,17 @@
 #include "Cliente.hpp"
 #include "Empleado.hpp"
 #include "Articulo.hpp"
-
+using namespace std;
 class Orden {
 private:
-    std::string codigo;
+    string codigo;
     Cliente* cliente;
     Empleado* empleado;
-    std::list<Articulo*> articulos;
+    list<Articulo*> articulos;
 
 public:
-    Orden(std::string codigo, Cliente* cliente, Empleado* empleado);
-    std::string getCodigo();
+    Orden(string codigo, Cliente* cliente, Empleado* empleado);
+    string getCodigo();
     Cliente* getCliente();
     Empleado* getEmpleado();
     void mostrar();

@@ -2,18 +2,18 @@
 #define CLIENTE_HPP
 
 #include <string>
-
+using namespace std;
 class Cliente {
 private:
-    std::string codigo;
-    std::string nombre;
-    std::string direccion;
+    string codigo;
+    string nombre;
+    string direccion;
 
 public:
-    Cliente(std::string codigo, std::string nombre, std::string direccion);
-    std::string getCodigo();
-    std::string getNombre();
-    std::string getDireccion();
+    Cliente(string codigo, string nombre, string direccion);
+    string getCodigo();
+    string getNombre();
+    string getDireccion();
     void mostrar();
 };
 

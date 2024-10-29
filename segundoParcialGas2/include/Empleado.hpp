@@ -2,20 +2,20 @@
 #define EMPLEADO_HPP
 
 #include <string>
-
+using namespace std;
 class Empleado {
 private:
-    std::string codigo;
-    std::string nombre;
-    std::string direccion;
-    std::string puesto;
+    string codigo;
+    string nombre;
+    string direccion;
+    string puesto;
 
 public:
-    Empleado(std::string codigo, std::string nombre, std::string direccion, std::string puesto);
-    std::string getCodigo();
-    std::string getNombre();
-    std::string getDireccion();
-    std::string getPuesto();
+    Empleado(string codigo, string nombre, string direccion, string puesto);
+    string getCodigo();
+    string getNombre();
+    string getDireccion();
+    string getPuesto();
     void mostrar();
 };
 

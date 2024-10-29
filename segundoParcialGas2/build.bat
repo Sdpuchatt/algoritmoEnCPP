@@ -10,4 +10,4 @@ rem Ejecutar el programa
 app.exe
 
 rem Eliminar archivos .o generados
-del *.o
+DEL *.o

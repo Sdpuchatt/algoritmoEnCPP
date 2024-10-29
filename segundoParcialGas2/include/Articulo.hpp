@@ -2,17 +2,17 @@
 #define ARTICULO_HPP
 
 #include <string>
-
+using namespace std;
 class Articulo {
 private:
-    std::string codigo;
-    std::string nombre;
+    string codigo;
+    string nombre;
     double precio;
 
 public:
-    Articulo(std::string codigo, std::string nombre, double precio);
-    std::string getCodigo();
-    std::string getNombre();
+    Articulo(string codigo, string nombre, double precio);
+    string getCodigo();
+    string getNombre();
     double getPrecio();
     void mostrar();
 };

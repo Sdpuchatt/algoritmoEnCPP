@@ -8,11 +8,14 @@ Articulo::Articulo(string _codigo, string _nombre, double _precio){
     precio = _precio;
 }
 
-string Articulo::getCodigo() { return codigo; }
+string Articulo::getCodigo(){
+     return codigo; 
+}
 string Articulo::getNombre() { return nombre; }
-double Articulo::getPrecio() { return precio; }
+double Articulo::getPrecio() { 
+    return precio; 
+}
 
 void Articulo::mostrar() {
-    
     cout << "Codigo: " << codigo << " Nombre: " << nombre << " ----> Precio: " << precio << endl;
 }

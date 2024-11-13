@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.ejs": "html",
         "ostream": "cpp",
         "cctype": "cpp",
         "cmath": "cpp",
@@ -49,7 +50,8 @@
         "optional": "cpp",
         "string_view": "cpp",
         "ranges": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "numbers": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
